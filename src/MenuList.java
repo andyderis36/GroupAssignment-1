@@ -65,6 +65,9 @@ public class MenuList {
     }
 
     public static void searchItem(Scanner scanner) {
+        System.out.println("====================");
+        System.out.println("Menu 6 - Search Item");
+        System.out.println("====================");
         System.out.print("\nEnter the item name to search: ");
         String itemName = scanner.next();
 
@@ -78,9 +81,9 @@ public class MenuList {
     }
 
     public static void addItem(Scanner scanner) {
-        System.out.println("================");
+        System.out.println("=================");
         System.out.println("Menu 6 - Add Item");
-        System.out.println("================");
+        System.out.println("=================");
 
         System.out.print("Enter the new item name: ");
         String newItemName = scanner.next();
@@ -103,9 +106,9 @@ public class MenuList {
     }
 
     public static void deleteItem(Scanner scanner) {
-        System.out.println("=====================");
+        System.out.println("====================");
         System.out.println("Menu 7 - Delete Item");
-        System.out.println("=====================");
+        System.out.println("====================");
         System.out.print("\nEnter the item name to delete: ");
         String itemName = scanner.next();
 
