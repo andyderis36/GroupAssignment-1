@@ -68,6 +68,18 @@ public class App {
                             MenuList.viewShopBalance();
                             switchMenu();
                             break;
+                        case 5:
+                            MenuList.searchItem(scanner);
+                            switchMenu();
+                            break;
+                        case 6:
+                            MenuList.addItem(scanner);
+                            switchMenu();
+                            break;
+                        case 7:
+                            MenuList.deleteItem(scanner);
+                            switchMenu();
+                            break;
                         default:
                             System.out.println("Menu not available. Please choose menu from given list! \n");
                             switchMenu();
@@ -98,6 +110,9 @@ public class App {
             System.out.println("*           2. Sell Item                      *");
             System.out.println("*           3. Restock Item                   *");
             System.out.println("*           4. Show Shop Balance              *");
+            System.out.println("*           5. Search Item                    *");
+            System.out.println("*           6. Add New Item                   *");
+            System.out.println("*           7. Delete Item                   *");
             System.out.println("***********************************************");
             System.out.print("Enter your menu: ");
         
