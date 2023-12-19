@@ -4,9 +4,9 @@ import java.util.Scanner;
 public class MenuList {
 
     public static void viewItems() {
-        System.out.println("===================");
+        System.out.println("=============================");
         System.out.println("Menu 1 - Show Available Items");
-        System.out.println("===================");
+        System.out.println("=============================");
         System.out.println("\nItems available in the shop: \n");
         for (Map.Entry<String, Double> entry : App.itemPrices.entrySet()) {
             String itemName = entry.getKey();
