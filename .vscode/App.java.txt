@@ -1,7 +1,12 @@
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 
 public class App {
 
+    public static Map<String, Double> itemPrices = new HashMap<>();
+    public static Map<String, Integer> itemStocks = new HashMap<>();
+    public static double shopBalance = 10000.0; // Initial shop balance
 
     public static void main(String[] args) {
 
@@ -13,10 +18,21 @@ public class App {
         System.out.println("************************************************");
         System.out.println(" ");
         
-
+        initializeItems();
         switchMenu();
     }   
         
+    public static void initializeItems() {
+            itemPrices.put("mouse", 20.0);
+            itemPrices.put("keyboard", 30.0);
+            itemPrices.put("monitor", 150.0);
+            itemPrices.put("desktop", 500.0);
+    
+            itemStocks.put("mouse", 50);
+            itemStocks.put("keyboard", 30);
+            itemStocks.put("monitor", 20);
+            itemStocks.put("desktop", 10);
+    }
 
     public static void switchMenu() {
 
@@ -96,7 +112,7 @@ public class App {
             System.out.println("*           4. Show Shop Balance              *");
             System.out.println("*           5. Search Item                    *");
             System.out.println("*           6. Add New Item                   *");
-            System.out.println("*           7. Delete Item                   *");
+            System.out.println("*           7. Delete Item                    *");
             System.out.println("***********************************************");
             System.out.print("Enter your menu: ");
         
