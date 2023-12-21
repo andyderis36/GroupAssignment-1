@@ -140,7 +140,8 @@ public class MenuList {
 
             System.out.println(itemName + " has been deleted.");
         } else {
-            System.out.println("Item not found.");
+            System.out.println("Item not found!!! \n");
+            deleteItem(scanner);
         }
     }
 

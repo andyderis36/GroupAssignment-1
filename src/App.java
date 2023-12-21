@@ -2,7 +2,6 @@ import java.util.Scanner;
 
 public class App {
 
-
     public static void main(String[] args) {
 
         System.out.println(" ");
@@ -67,8 +66,7 @@ public class App {
                         default:
                             System.out.println("Menu not available. Please choose menu from given list! \n");
                             switchMenu();
-                    }
-                    break;
+                        } break;
                 } while (menu != 0);
     
             } else if (confirmation == 'n' || confirmation == 'N') {
@@ -80,7 +78,7 @@ public class App {
             }
     
             // Close the scanner
-            scanner.close();
+            //scanner.close();
     }
     
     public static int displayMenu() {
