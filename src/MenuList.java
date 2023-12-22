@@ -8,6 +8,7 @@ public class MenuList {
     private static int[] itemStocks = { 50, 30, 20, 10 };
     private static double shopBalance = 10000.0;
 
+    //Method for menu 1
     public static void viewItems() {
         System.out.println("=============================");
         System.out.println("Menu 1 - Show Available Items");
@@ -21,6 +22,7 @@ public class MenuList {
         }
     }
 
+    //Method for menu 2
     public static void sellItem(Scanner scanner) {
         System.out.println("==================");
         System.out.println("Menu 2 - Sell Item");
@@ -43,7 +45,7 @@ public class MenuList {
             System.out.println("Item not available or out of stock.");
         }
     }
-
+    //Method for menu 3
     public static void restockItem(Scanner scanner) {
         System.out.println("=====================");
         System.out.println("Menu 3 - Restock Item");
@@ -63,14 +65,14 @@ public class MenuList {
             System.out.println("Invalid item name.");
         }
     }
-
+    //Method for menu 4
     public static void viewShopBalance() {
         System.out.println("==========================");
         System.out.println("Menu 4 - View Shop Balance");
         System.out.println("==========================");
         System.out.println("\nShop Balance: RM" + shopBalance);
     }
-
+    //Method for menu 5
     public static void searchItem(Scanner scanner) {
         System.out.println("====================");
         System.out.println("Menu 5 - Search Item");
@@ -88,7 +90,7 @@ public class MenuList {
             System.out.println("Item not found.");
         }
     }
-
+    //Method for menu 6
     public static void addItem(Scanner scanner) {
         System.out.println("=================");
         System.out.println("Menu 6 - Add Item");
@@ -122,7 +124,7 @@ public class MenuList {
         System.out.println(
                 "Added new item: " + newItemName + " | Price: RM" + newItemPrice + " | Initial Stock: " + newItemStock);
     }
-
+    //Method for menu 7
     public static void deleteItem(Scanner scanner) {
         System.out.println("====================");
         System.out.println("Menu 7 - Delete Item");
