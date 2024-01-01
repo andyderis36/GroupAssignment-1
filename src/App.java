@@ -11,7 +11,6 @@ public class App {
         System.out.println("*                                              *");
         System.out.println("************************************************");
         System.out.println(" ");
-        
 
         switchMenu();
     }   
@@ -78,7 +77,7 @@ public class App {
             }
     
             // Close the scanner
-            //scanner.close();
+            scanner.close();
     }
     
     public static int displayMenu() {
@@ -94,7 +93,7 @@ public class App {
             System.out.println("*           4. Show Shop Balance              *");
             System.out.println("*           5. Search Item                    *");
             System.out.println("*           6. Add New Item                   *");
-            System.out.println("*           7. Delete Item                   *");
+            System.out.println("*           7. Delete Item                    *");
             System.out.println("***********************************************");
             System.out.print("Enter your menu: ");
         

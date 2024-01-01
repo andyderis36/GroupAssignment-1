@@ -21,7 +21,6 @@ public class MenuList {
             System.out.println(itemName + " - RM " + itemPrice + " | Stock: " + itemStock);
         }
     }
-
     //Method for menu 2
     public static void sellItem(Scanner scanner) {
         System.out.println("==================");
