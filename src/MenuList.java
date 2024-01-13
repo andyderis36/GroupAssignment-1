@@ -22,7 +22,7 @@ public class MenuList {
                 String itemName = items[i];
                 double itemPrice = itemPrices[i];
                 int itemStock = itemStocks[i];
-                System.out.println((i+1) + ". " + itemName + " - RM" + itemPrice + " | Stock: " + itemStock);
+                System.out.println((i + 1) + ". " + itemName + " - RM" + itemPrice + " | Stock: " + itemStock);
             }
         }
     }
@@ -41,7 +41,7 @@ public class MenuList {
                 String itemName = items[i];
                 double itemPrice = itemPrices[i];
                 int itemStock = itemStocks[i];
-                System.out.println((i+1) + ". " + itemName + " - RM" + itemPrice + " | Stock: " + itemStock);
+                System.out.println((i + 1) + ". " + itemName + " - RM" + itemPrice + " | Stock: " + itemStock);
             }
 
             System.out.print("\nEnter the item name to sell: ");
@@ -144,7 +144,7 @@ public class MenuList {
 
         // Input price of item
         System.out.print("Enter the price for " + newItemName + ": RM");
-        
+
         // Check if the input is an integer
         while (!scanner.hasNextInt()) {
             System.out.println("Invalid input. Please enter a valid integer.");
@@ -165,8 +165,6 @@ public class MenuList {
         // Read the valid integer input
         int newItemStock = scanner.nextInt();
 
-
-
         // Assuming items, itemPrices, and itemStocks are defined in MenuList class
         items = Arrays.copyOf(items, items.length + 1);
         itemPrices = Arrays.copyOf(itemPrices, itemPrices.length + 1);
@@ -177,7 +175,8 @@ public class MenuList {
         itemStocks[itemStocks.length - 1] = newItemStock;
 
         System.out.println(
-                "\nAdded new item: \n" + newItemName + " | Price: RM" + newItemPrice + " | Initial Stock: " + newItemStock);
+                "\nAdded new item: \n" + newItemName + " | Price: RM" + newItemPrice + " | Initial Stock: "
+                        + newItemStock);
     }
 
     // Method for menu 7
@@ -195,7 +194,7 @@ public class MenuList {
                 String itemName = items[i];
                 double itemPrice = itemPrices[i];
                 int itemStock = itemStocks[i];
-                System.out.println((i+1) + ". " + itemName + " - RM" + itemPrice + " | Stock: " + itemStock);
+                System.out.println((i + 1) + ". " + itemName + " - RM" + itemPrice + " | Stock: " + itemStock);
             }
         }
 
